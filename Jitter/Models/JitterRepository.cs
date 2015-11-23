@@ -22,7 +22,8 @@ namespace Jitter.Models
 
         public List<JitterUser> GetAllUsers()
         {
-            return null;
+            var query = from users in Context.JitterUsers select users;
+            return query.ToList();
         }
     }
 }
