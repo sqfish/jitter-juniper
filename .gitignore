@@ -6,8 +6,10 @@
 *.user
 *.sln.docstates
 
+Jitter/Scripts/angular*
 # Build results
-
+Jitter/Scripts/i18n
+Jitter/Scripts/angular*
 [Dd]ebug/
 [Rr]elease/
 x64/
