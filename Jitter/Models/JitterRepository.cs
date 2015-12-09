@@ -65,6 +65,11 @@ namespace Jitter.Models
             return found_users;
         }
 
+        internal List<Jot> GetUserJots(JitterUser me)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<JitterUser> SearchByName(string search_term)
         {
             // SQL: select * from JitterUsers AS users where users.FirstName like '%search_term%' OR users.LastName like '%search_term%';

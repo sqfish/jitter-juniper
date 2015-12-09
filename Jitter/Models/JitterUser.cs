@@ -11,6 +11,9 @@ namespace Jitter.Models
         [Key]
         public int JitterUserId { get; set; }
 
+        // Adds a foreign key
+        public virtual ApplicationUser RealUser { get; set; }
+
         [MaxLength(161)]
         public string Description { get; set; }
         public string FirstName { get; set; }

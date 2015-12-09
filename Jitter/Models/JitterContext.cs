@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace Jitter.Models
 {
-    public class JitterContext : DbContext 
+    public class JitterContext : ApplicationDbContext  // Switch from DbContext to ApplicationDbContext for migrations
     {
         // IDbSet, IQueryable
         public virtual DbSet<JitterUser> JitterUsers { get; set; }

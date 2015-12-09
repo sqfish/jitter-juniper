@@ -8,7 +8,8 @@ namespace Jitter.Models
 {
     public class Jot : IComparable
     {
-        public JitterUser Author { get; set; }
+        // Add keyword 'virtual' for migrations
+        public virtual JitterUser Author { get; set; }
         [Required]
         public string Content { get; set; }
         public DateTime Date { get; set; }
