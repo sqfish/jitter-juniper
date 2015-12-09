@@ -5,7 +5,6 @@
 *.suo
 *.user
 *.sln.docstates
-
 Jitter/Scripts/angular*
 # Build results
 Jitter/Scripts/i18n

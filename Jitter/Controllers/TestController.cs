@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.Http;
 using System.Net;
 using System.Net.Http;
-
+using System.Web.Http;
 
 namespace Jitter.Controllers
 {
@@ -13,15 +12,13 @@ namespace Jitter.Controllers
         // GET: api/Test
         public string Get()
         {
-            return "Hello, It's Me!";
+            return "Hello, is it me you're looking for?";
         }
-
         /*
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
-        }
-        */
+        }*/
 
         // GET: api/Test/5
         public string Get(int id)

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Web.Mvc;
 using Jitter.Controllers;
-using Microsoft.Web.Infrastructure;
-
 
 namespace Jitter.Tests.Controllers
 {
@@ -13,9 +11,15 @@ namespace Jitter.Tests.Controllers
         [TestMethod]
         public void TestControllerEnsureICanCallGetAction()
         {
+            // Arrange
             TestController my_controller = new TestController();
-            string expected_output = "Hello, it's me!";
+            string expected_output = "Hello, is it me you're looking for?";
+
+            // Act
             string actual_output = my_controller.Get();
+
+            // Assert
+            Assert.AreEqual(expected_output, actual_output);
         }
     }
 }
